@@ -1,0 +1,13 @@
+# Requirements for the APP (frontend + backend). No PyTorch needed: the app runs the saved ONNX model.
+#   pip install -r requirements.txt
+# Tested versions in brackets. Python 3.10 or newer.
+numpy>=1.24            # (2.5.3)   numbers and arrays
+pandas>=1.5            # (3.0.5)   tables in the History tab
+pillow>=9.5            # (12.3.0)  reading photos
+onnxruntime>=1.17      # (1.29.0)  runs saved_model/plant_model.onnx
+streamlit>=1.50        # (1.66.1)  the web page (frontend)
+fastapi>=0.110         # (0.162.0) the REST API (backend)
+uvicorn>=0.27          # (0.54.0)  web server for the API
+python-multipart       # (0.0.32)  lets the API receive uploaded photos
+pytest                 # (9.1.1)   tests
+httpx                  # (0.28.1)  needed by the API test

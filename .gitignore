@@ -1,0 +1,9 @@
+# big or generated files - not stored in git
+data/datasets/
+database/
+saved_model.zip
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+notebooks/_test_*.ipynb
+.venv/

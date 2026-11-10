@@ -1,0 +1,302 @@
+{
+ "settings": {
+  "backbone": "mobilenetv3_small_100",
+  "quick_test": false,
+  "head_epochs": 4.0,
+  "finetune_epochs": 0.0,
+  "seed": 42.0,
+  "alpha": 0.1
+ },
+ "history": [
+  {
+   "stage": 1.0,
+   "epoch": 1.0,
+   "loss": 1.2597242183044177,
+   "val_f1": 0.9006364058223384
+  },
+  {
+   "stage": 1.0,
+   "epoch": 2.0,
+   "loss": 1.0365492935942,
+   "val_f1": 0.9062270279431042
+  },
+  {
+   "stage": 1.0,
+   "epoch": 3.0,
+   "loss": 0.9986690338920144,
+   "val_f1": 0.920234706979422
+  },
+  {
+   "stage": 1.0,
+   "epoch": 4.0,
+   "loss": 0.9904833733534613,
+   "val_f1": 0.9211970402591106
+  }
+ ],
+ "scores": {
+  "temperature": 0.49000000000000005,
+  "lab_accuracy": 0.9362579677540307,
+  "lab_macro_f1": 0.9264089369399249,
+  "field_accuracy": 0.21241050119331742,
+  "field_macro_f1": 0.1944709946651757,
+  "field_group_accuracy": 0.5461416070007955,
+  "field_mean_confidence": 0.6352220066400155,
+  "lab_ece": 0.010099632891974946,
+  "field_ece": 0.4228115054466981
+ },
+ "lab_to_lab": {
+  "Top-1": {
+   "coverage": 0.9535058117735283,
+   "set_size": 1.0,
+   "advice_rate": 1.0,
+   "IAR": 0.046494188226471694,
+   "wrong_advice_all": 0.046494188226471694,
+   "coverage_G0": 0.9931833674164963,
+   "coverage_G1": 0.9424829157175398,
+   "coverage_G2": 0.7931034482758621,
+   "coverage_G3": 0.9477611940298507,
+   "coverage_G4": 0.9732381801962533,
+   "coverage_G5": 0.8841463414634146
+  },
+  "APS \u2192 groups": {
+   "coverage": 0.9998125234345707,
+   "set_size": 3.5592425946756654,
+   "advice_rate": 0.21578552680914886,
+   "IAR": 0.0008688097306689834,
+   "wrong_advice_all": 0.00018747656542932134,
+   "coverage_G0": 1.0,
+   "coverage_G1": 1.0,
+   "coverage_G2": 0.996551724137931,
+   "coverage_G3": 1.0,
+   "coverage_G4": 1.0,
+   "coverage_G5": 1.0
+  },
+  "Action-group (ours)": {
+   "coverage": 0.8976377952755905,
+   "set_size": 0.9188226471691039,
+   "advice_rate": 0.9158230221222348,
+   "IAR": 0.02128966223132037,
+   "wrong_advice_all": 0.01949756280464942,
+   "coverage_G0": 0.8929788684389911,
+   "coverage_G1": 0.9094533029612756,
+   "coverage_G2": 0.8724137931034482,
+   "coverage_G3": 0.9048507462686567,
+   "coverage_G4": 0.8760035682426405,
+   "coverage_G5": 0.9817073170731707
+  }
+ },
+ "lab_thresholds_to_field": {
+  "Top-1": {
+   "coverage": 0.5461416070007955,
+   "set_size": 1.0,
+   "advice_rate": 1.0,
+   "IAR": 0.45385839299920444,
+   "wrong_advice_all": 0.45385839299920444,
+   "coverage_G0": 0.3776470588235294,
+   "coverage_G1": 0.7523727351164797,
+   "coverage_G2": 0.6834170854271356,
+   "coverage_G3": 0.0847457627118644,
+   "coverage_G4": 0.2283464566929134,
+   "coverage_G5": 0.0
+  },
+  "APS \u2192 groups": {
+   "coverage": 0.9968178202068417,
+   "set_size": 5.139220365950676,
+   "advice_rate": 0.007159904534606206,
+   "IAR": 0.05555555555555555,
+   "wrong_advice_all": 0.0003977724741447892,
+   "coverage_G0": 1.0,
+   "coverage_G1": 0.999137187230371,
+   "coverage_G2": 1.0,
+   "coverage_G3": 0.9830508474576272,
+   "coverage_G4": 0.984251968503937,
+   "coverage_G5": 0.0
+  },
+  "Action-group (ours)": {
+   "coverage": 0.390612569610183,
+   "set_size": 0.7247414478918058,
+   "advice_rate": 0.7215592680986476,
+   "IAR": 0.46030871003307605,
+   "wrong_advice_all": 0.332140015910899,
+   "coverage_G0": 0.08588235294117647,
+   "coverage_G1": 0.6557377049180327,
+   "coverage_G2": 0.7336683417085427,
+   "coverage_G3": 0.01694915254237288,
+   "coverage_G4": 0.0,
+   "coverage_G5": 0.0
+  }
+ },
+ "field_recalibration": {
+  "10": {
+   "Top-1": {
+    "coverage": 0.5483176911142044,
+    "set_size": 1.0,
+    "advice_rate": 1.0,
+    "IAR": 0.4516823088857955,
+    "wrong_advice_all": 0.4516823088857955,
+    "coverage_G0": 0.3775595238095238,
+    "coverage_G1": 0.7519909374308215,
+    "coverage_G2": 0.680952380952381,
+    "coverage_G3": 0.0835599884568213,
+    "coverage_G4": 0.23247863247863249,
+    "coverage_G5": 0.0
+   },
+   "APS \u2192 groups": {
+    "coverage": 0.9967531149321648,
+    "set_size": 5.209972956905051,
+    "advice_rate": 0.0063110990714523,
+    "IAR": 0.05774660824078646,
+    "wrong_advice_all": 0.00036526797907735794,
+    "coverage_G0": 0.9998809523809523,
+    "coverage_G1": 0.9993472584856399,
+    "coverage_G2": 1.0,
+    "coverage_G3": 0.9760370824615828,
+    "coverage_G4": 0.9854700854700855,
+    "coverage_G5": 0.275
+   },
+   "Action-group (ours)": {
+    "coverage": 0.8939894694728737,
+    "set_size": 3.2397843110502977,
+    "advice_rate": 0.0877268640819189,
+    "IAR": 0.17257712903086844,
+    "wrong_advice_all": 0.016680746805975186,
+    "coverage_G0": 0.9014285714285715,
+    "coverage_G1": 0.8897297453019292,
+    "coverage_G2": 0.904232804232804,
+    "coverage_G3": 0.9005501046100571,
+    "coverage_G4": 0.8717948717948719,
+    "coverage_G5": 0.0
+   }
+  },
+  "25": {
+   "Top-1": {
+    "coverage": 0.5524111505623555,
+    "set_size": 1.0,
+    "advice_rate": 1.0,
+    "IAR": 0.44758884943764443,
+    "wrong_advice_all": 0.44758884943764443,
+    "coverage_G0": 0.3778412032950868,
+    "coverage_G1": 0.7525462671093739,
+    "coverage_G2": 0.6832386552388547,
+    "coverage_G3": 0.0835853084698501,
+    "coverage_G4": 0.22549019607843138,
+    "coverage_G5": 0.0
+   },
+   "APS \u2192 groups": {
+    "coverage": 0.996399729216755,
+    "set_size": 5.119795739896636,
+    "advice_rate": 0.008561153752577596,
+    "IAR": 0.062180422170019956,
+    "wrong_advice_all": 0.0004395582629205748,
+    "coverage_G0": 0.999939393939394,
+    "coverage_G1": 0.9991622185796943,
+    "coverage_G2": 1.0,
+    "coverage_G3": 0.9710286685256184,
+    "coverage_G4": 0.9857843137254901,
+    "coverage_G5": 0.125
+   },
+   "Action-group (ours)": {
+    "coverage": 0.9261110036017959,
+    "set_size": 3.380486822629963,
+    "advice_rate": 0.09092610569240792,
+    "IAR": 0.15769736212021435,
+    "wrong_advice_all": 0.01515456275377165,
+    "coverage_G0": 0.9260592821418066,
+    "coverage_G1": 0.9300188664266335,
+    "coverage_G2": 0.9350325559763473,
+    "coverage_G3": 0.9147394562565353,
+    "coverage_G4": 0.9029411764705882,
+    "coverage_G5": 0.0
+   }
+  },
+  "50": {
+   "Top-1": {
+    "coverage": 0.5595582414287923,
+    "set_size": 1.0,
+    "advice_rate": 1.0,
+    "IAR": 0.44044175857120776,
+    "wrong_advice_all": 0.44044175857120776,
+    "coverage_G0": 0.3778125,
+    "coverage_G1": 0.7528854824165915,
+    "coverage_G2": 0.6759522945764556,
+    "coverage_G3": 0.08628921384826897,
+    "coverage_G4": 0.2325786056049214,
+    "coverage_G5": 0.0
+   },
+   "APS \u2192 groups": {
+    "coverage": 0.9965323732217,
+    "set_size": 5.061916075005973,
+    "advice_rate": 0.009607788295033486,
+    "IAR": 0.04496637372281914,
+    "wrong_advice_all": 0.0003975655381002421,
+    "coverage_G0": 1.0,
+    "coverage_G1": 0.9991884580703335,
+    "coverage_G2": 1.0,
+    "coverage_G3": 0.9676884139482566,
+    "coverage_G4": 0.9889610389610392,
+    "coverage_G5": 0.0
+   },
+   "Action-group (ours)": {
+    "coverage": 0.9041188992066255,
+    "set_size": 3.126761163220279,
+    "advice_rate": 0.12923108962898305,
+    "IAR": 0.18834460313792176,
+    "wrong_advice_all": 0.024649014566798196,
+    "coverage_G0": 0.8944374999999999,
+    "coverage_G1": 0.9155094679891794,
+    "coverage_G2": 0.8952249229094867,
+    "coverage_G3": 0.8881389826271715,
+    "coverage_G4": 0.9077580314422418,
+    "coverage_G5": 0.0
+   }
+  }
+ },
+ "final_system_field_test": {
+  "Top-1": {
+   "coverage": 0.5512766848053579,
+   "set_size": 1.0,
+   "advice_rate": 1.0,
+   "IAR": 0.4487233151946421,
+   "wrong_advice_all": 0.4487233151946421,
+   "coverage_G0": 0.3793939393939394,
+   "coverage_G1": 0.7504409171075838,
+   "coverage_G2": 0.6839080459770115,
+   "coverage_G3": 0.07894736842105263,
+   "coverage_G4": 0.21568627450980393,
+   "coverage_G5": 0.0
+  },
+  "APS \u2192 groups": {
+   "coverage": 0.9966513185433236,
+   "set_size": 5.241942235244872,
+   "advice_rate": 0.0033486814566764337,
+   "IAR": 0.125,
+   "wrong_advice_all": 0.0004185851820845542,
+   "coverage_G0": 1.0,
+   "coverage_G1": 0.9991181657848325,
+   "coverage_G2": 1.0,
+   "coverage_G3": 0.9802631578947368,
+   "coverage_G4": 0.9803921568627451,
+   "coverage_G5": 0.0
+  },
+  "Action-group (ours)": {
+   "coverage": 0.8936793637505233,
+   "set_size": 3.372540812055253,
+   "advice_rate": 0.08287986605274174,
+   "IAR": 0.21212121212121213,
+   "wrong_advice_all": 0.017580577647551276,
+   "coverage_G0": 0.9187878787878788,
+   "coverage_G1": 0.8518518518518519,
+   "coverage_G2": 0.9712643678160919,
+   "coverage_G3": 0.9736842105263158,
+   "coverage_G4": 0.9215686274509803,
+   "coverage_G5": 0.0
+  }
+ },
+ "unknown_photo_gate": {
+  "energy_threshold": -1.177200062946182,
+  "rice_flagged_unknown": 0.0,
+  "field_test_flagged_unknown": 0.0795311845960653,
+  "lab_test_flagged_unknown": 0.013310836145481815,
+  "auroc_lab_vs_rice": 0.8548400199975003
+ }
+}
